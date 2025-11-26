@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SereneMind Women’s Wellness Center</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-rose-50">
+
+<!-- nav -->
+<nav class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-xl shadow z-50 ">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+
+        <div class="text-3xl font-bold text-rose-600">SereneMind</div>
+
+        <!-- des-->
+        <div class="hidden md:flex space-x-10 text-gray-700 font-semibold">
+            <a href="#home" class="hover:text-rose-600">Home</a>
+            <a href="#about" class="hover:text-rose-600">About</a>
+            <a href="#services" class="hover:text-rose-600">Services</a>
+            <a href="#expertise" class="hover:text-rose-600">Expertise</a>
+            <a href="#pricing" class="hover:text-rose-600">Pricing</a>
+            <a href="#faq" class="hover:text-rose-600">FAQ</a>
+            <a href="#contact" class="hover:text-rose-600">Contact</a>
+        </div>
+
+        <!-- mob-btn -->
+        <button id="menuBtn" class="md:hidden text-4xl text-rose-600">☰</button>
+    </div>
+
+    <!-- mob-->
+<div id="mobileMenu" 
+     class="md:hidden flex flex-col gap-4 px-6 py-3 font-semibold text-gray-700 
+     max-h-0 opacity-0 pointer-events-none overflow-hidden transition-all duration-500">
+     
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#expertise">Expertise</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Contact</a>
+</div>
+
+</nav>
+
+
+<!-- hero -->
+<section id="home" class="pt-40 pb-24 relative overflow-hidden bg-white">
+
+    <div class="absolute top-10 right-10 w-64 h-64 bg-rose-200 rounded-full blur-3xl opacity-40 float"></div>
+    <div class="absolute bottom-10 left-10 w-80 h-80 bg-rose-300 rounded-full blur-3xl opacity-40 float"></div>
+
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-14 items-center fade">
+
+        <div class="space-y-7">
+            <h1 class="text-5xl md:text-6xl font-bold leading-tight text-gray-900">
+                Transforming Women’s Mental & Emotional Wellness
+            </h1>
+            <p class="text-lg text-gray-700">
+                Personalized therapy designed exclusively for women empowering emotional healing, confidence, and
+                stress free living.
+            </p>
+
+            <a href="#contact"
+                class="inline-block px-9 py-4 bg-rose-600 text-white rounded-xl shadow-xl text-lg font-semibold hover:opacity-90 transition">
+                Book Appointment
+            </a>
+        </div>
+
+        <img src="./images/Descargar_ai_generado_un_hembra_médico_con_un_estetoscopio_aislado_en_transparente_antecedentes_png_gratis-removebg-preview (1).png"
+            class="rounded-3xl shadow-2xl float" alt=""/>
+    </div>
+</section>
+
+<!-- info -->
+<section class="py-20 bg-rose-50 fade">
+    <div class="max-w-6xl mx-auto grid stats-grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
+
+        <div class="stats-box p-8 bg-white rounded-2xl shadow hover-card">
+            <h2 class="text-4xl text-rose-600 font-bold">12+</h2>
+            <p class="text-gray-600">Years Experience</p>
+        </div>
+
+        <div class="stats-box p-8 bg-white rounded-2xl shadow hover-card">
+            <h2 class="text-4xl text-rose-600 font-bold">1500+</h2>
+            <p class="text-gray-600">Women Guided</p>
+        </div>
+
+        <div class="stats-box p-8 bg-white rounded-2xl shadow hover-card">
+            <h2 class="text-4xl text-rose-600 font-bold">98%</h2>
+            <p class="text-gray-600">Client Satisfaction</p>
+        </div>
+
+        <div class="stats-box p-8 bg-white rounded-2xl shadow hover-card">
+            <h2 class="text-4xl text-rose-600 font-bold">3000+</h2>
+            <p class="text-gray-600">Sessions Completed</p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- about -->
+<section id="about" class="py-24 fade">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-14 px-6 items-center">
+
+        <img src="./images/Descargar_ai_generado_un_hembra_médico_con_un_estetoscopio_aislado_en_transparente_antecedentes_png_gratis-removebg-preview (1).png"
+            class="rounded-3xl shadow-2xl hover-card w-full max-w-sm md:max-w-full mx-auto"
+            alt=""/>
+
+        <div class="text-center md:text-left px-2">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-5 leading-tight">Meet Dr. Amelia Rose</h2>
+
+            <p class="text-gray-700 mb-4 leading-relaxed text-base sm:text-lg">
+                A certified Psychologist & Women's Mental Wellness Expert with 12+ years of practice.  
+                Dr. Amelia specializes in emotional healing, anxiety disorders, trauma therapy, and women's life challenges.
+            </p>
+
+            <p class="text-gray-700 mb-6 leading-relaxed text-base sm:text-lg">
+                Her mission is to help women find clarity, inner strength, and emotional freedom.
+            </p>
+
+            <a href="#services"
+                class="px-6 md:px-7 py-3 bg-rose-600 text-white rounded-xl shadow hover:opacity-90 transition font-semibold">
+                View Services
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- servics -->
+<section id="services" class="py-24 bg-white fade">
+
+    <h2 class="text-center text-3xl sm:text-4xl font-bold mb-12">
+        Our Therapy Services
+    </h2>
+
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-10 px-6">
+
+        <div class="bg-white p-7 sm:p-8 md:p-10 rounded-2xl shadow-xl hover-card text-center md:text-left">
+            <h3 class="text-xl sm:text-2xl font-semibold mb-3">Online Therapy Sessions</h3>
+            <p class="text-gray-600 leading-relaxed text-base sm:text-lg">
+                Secure, private one-on-one video sessions designed around your emotional needs.
+            </p>
+        </div>
+
+        <div class="bg-white p-7 sm:p-8 md:p-10 rounded-2xl shadow-xl hover-card text-center md:text-left">
+            <h3 class="text-xl sm:text-2xl font-semibold mb-3">Emotional Support Therapy</h3>
+            <p class="text-gray-600 leading-relaxed text-base sm:text-lg">
+                Helps reduce anxiety, stress, burnout, and emotional overwhelm.
+            </p>
+        </div>
+
+        <div class="bg-white p-7 sm:p-8 md:p-10 rounded-2xl shadow-xl hover-card text-center md:text-left">
+            <h3 class="text-xl sm:text-2xl font-semibold mb-3">Self Worth & Confidence</h3>
+            <p class="text-gray-600 leading-relaxed text-base sm:text-lg">
+                Healing programs to rebuild inner strength, boundaries & feminine confidence.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- exp -->
+<section id="expertise" class="py-16 md:py-24 bg-rose-50 fade">
+    <h2 class="text-center text-3xl md:text-4xl font-bold mb-10 md:mb-14">Areas of Expertise</h2>
+
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-8 px-4 md:px-6">
+
+        <div class="bg-white p-6 md:p-8 rounded-2xl shadow hover-card text-center">
+            <h3 class="text-lg md:text-xl font-semibold mb-2 text-rose-600">Anxiety</h3>
+            <p class="text-gray-600 text-sm md:text-base">
+                Therapy to overcome chronic worry, panic, and physical stress symptoms.
+            </p>
+        </div>
+
+        <div class="bg-white p-6 md:p-8 rounded-2xl shadow hover-card text-center">
+            <h3 class="text-lg md:text-xl font-semibold mb-2 text-rose-600">Trauma Healing</h3>
+            <p class="text-gray-600 text-sm md:text-base">
+                Gentle recovery techniques for emotional wounds & past experiences.
+            </p>
+        </div>
+
+        <div class="bg-white p-6 md:p-8 rounded-2xl shadow hover-card text-center">
+            <h3 class="text-lg md:text-xl font-semibold mb-2 text-rose-600">Relationship Stress</h3>
+            <p class="text-gray-600 text-sm md:text-base">
+                Guidance for emotional regulation & healthy communication.
+            </p>
+        </div>
+
+        <div class="bg-white p-6 md:p-8 rounded-2xl shadow hover-card text-center">
+            <h3 class="text-lg md:text-xl font-semibold mb-2 text-rose-600">Life Transitions</h3>
+            <p class="text-gray-600 text-sm md:text-base">
+                Support through career change, motherhood, loss, or personal shifts.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- pricing -->
+<section id="pricing" class="py-16 md:py-24 fade bg-white">
+
+    <h2 class="text-center text-3xl md:text-4xl font-bold mb-10 md:mb-14">
+        Therapy Plans
+    </h2>
+
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10 px-4 md:px-6">
+
+        <!-- basic -->
+        <div class="bg-white p-6 sm:p-8 md:p-10 rounded-2xl shadow-xl hover-card text-center">
+            <h3 class="text-xl md:text-2xl font-bold mb-3 text-rose-600">Single Session</h3>
+            <p class="text-gray-600 mb-4 sm:mb-6 text-sm md:text-base">Perfect for first time clients.</p>
+
+            <h4 class="text-3xl sm:text-4xl font-bold mb-4">$60</h4>
+
+            <ul class="text-gray-600 space-y-2 sm:space-y-3 mb-6 sm:mb-8 text-sm md:text-base">
+                <li>✔ 1 Therapy Session</li>
+                <li>✔ Personalized Guidance</li>
+                <li>✔ Stress Relief Tools</li>
+            </ul>
+
+            <a href="#contact"
+               class="block text-center py-3 bg-rose-600 text-white rounded-xl font-semibold">
+                Book Now
+            </a>
+        </div>
+
+        <!-- standard -->
+        <div class="bg-rose-600 p-6 sm:p-8 md:p-10 rounded-2xl shadow-xl text-white 
+                    scale-100 sm:scale-105 hover:scale-105 transition text-center">
+            <h3 class="text-xl md:text-2xl font-bold mb-3">4 Week Healing Plan</h3>
+            <p class="mb-4 sm:mb-6 text-sm md:text-base">Most recommended</p>
+
+            <h4 class="text-3xl sm:text-4xl font-bold mb-4">$200</h4>
+
+            <ul class="space-y-2 sm:space-y-3 mb-6 sm:mb-8 text-sm md:text-base">
+                <li>✔ 4 Therapy Sessions</li>
+                <li>✔ Weekly Emotional Coaching</li>
+                <li>✔ Personalized Growth Plan</li>
+                <li>✔ Priority Scheduling</li>
+            </ul>
+
+            <a href="#contact"
+               class="block text-center py-3 bg-white text-rose-600 rounded-xl font-semibold">
+                Start Program
+            </a>
+        </div>
+
+        <!-- premium -->
+        <div class="bg-white p-6 sm:p-8 md:p-10 rounded-2xl shadow-xl hover-card text-center">
+            <h3 class="text-xl md:text-2xl font-bold mb-3 text-rose-600">8 Week Deep Healing</h3>
+            <p class="text-gray-600 mb-4 sm:mb-6 text-sm md:text-base">For long-term transformation.</p>
+
+            <h4 class="text-3xl sm:text-4xl font-bold mb-4">$380</h4>
+
+            <ul class="text-gray-600 space-y-2 sm:space-y-3 mb-6 sm:mb-8 text-sm md:text-base">
+                <li>✔ 8 Therapy Sessions</li>
+                <li>✔ Personalized Journal Workbook</li>
+                <li>✔ Trauma & Anxiety Tools</li>
+                <li>✔ 24/7 Voice Support</li>
+            </ul>
+
+            <a href="#contact"
+               class="block text-center py-3 bg-rose-600 text-white rounded-xl font-semibold">
+               Enroll Now
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- clients-->
+<section id="testimonials" class="py-24 bg-rose-50 fade">
+    <h2 class="text-center text-4xl font-bold mb-16">Client Experiences</h2>
+
+    <div class="relative max-w-3xl mx-auto">
+
+    
+        <div id="testimonialSlider" class="overflow-hidden rounded-2xl shadow-xl bg-white">
+
+            <div class="slide active p-10 text-center">
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    “Dr. Amelia changed my life. I found peace after years of anxiety.”
+                </p>
+                <h4 class="text-rose-600 font-semibold mt-4">Maria L.</h4>
+            </div>
+
+            <div class="slide p-10 text-center">
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    “The 4-week plan was the best investment in myself.”
+                </p>
+                <h4 class="text-rose-600 font-semibold mt-4">Ayesha K.</h4>
+            </div>
+
+            <div class="slide p-10 text-center">
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    “Her sessions helped me rebuild my confidence completely.”
+                </p>
+                <h4 class="text-rose-600 font-semibold mt-4">Emily R.</h4>
+            </div>
+
+        </div>
+
+        <div class="flex justify-center gap-3 mt-6">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- faq -->
+<section id="faq" class="py-24 bg-white fade">
+    <h2 class="text-center text-4xl font-bold mb-14">Frequently Asked Questions</h2>
+
+    <div class="max-w-4xl mx-auto space-y-6 px-6">
+
+        <details class="bg-rose-50 p-6 rounded-xl shadow cursor-pointer card-hover">
+            <summary class="font-semibold text-lg">How do online sessions work?</summary>
+            <p class="text-gray-700 mt-3">
+                Sessions are conducted via secure, private video calls using an encrypted platform.
+            </p>
+        </details>
+
+        <details class="bg-rose-50 p-6 rounded-xl shadow cursor-pointer card-hover">
+            <summary class="font-semibold text-lg">Is everything confidential?</summary>
+            <p class="text-gray-700 mt-3">
+                Yes. We follow strict mental health confidentiality standards and data protection policies.
+            </p>
+        </details>
+
+        <details class="bg-rose-50 p-6 rounded-xl shadow cursor-pointer card-hover">
+            <summary class="font-semibold text-lg">Do I need previous therapy experience?</summary>
+            <p class="text-gray-700 mt-3">
+                Not at all. Many women begin therapy for the first time with us. Sessions are comfortable and supportive.
+            </p>
+        </details>
+
+        <details class="bg-rose-50 p-6 rounded-xl shadow cursor-pointer card-hover">
+            <summary class="font-semibold text-lg">How many sessions will I need?</summary>
+            <p class="text-gray-700 mt-3">
+                It depends on your emotional goals most women feel major improvements within 4–8 sessions.
+            </p>
+        </details>
+
+    </div>
+</section>
+
+
+<section class="py-20 bg-rose-600 text-white text-center fade">
+    <h2 class="text-4xl font-bold mb-4">Ready to begin your healing journey?</h2>
+    <p class="text-lg mb-6">Book a session with Dr. Amelia and take your first step toward emotional wellness.</p>
+
+    <a href="#contact" class="px-10 py-4 bg-white text-rose-600 rounded-xl font-semibold shadow-lg hover:scale-105 transition">
+        Schedule Appointment
+    </a>
+</section>
+
+<!-- contact -->
+<section id="contact" class="py-24 bg-rose-50 fade">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 px-6">
+
+        
+        <div class="rounded-xl overflow-hidden shadow-xl">
+            <iframe src="https://maps.google.com/maps?q=New%20York&output=embed"
+                    class="w-full h-96 rounded-xl" title="map"></iframe>
+        </div>
+
+       
+        <div class="bg-white p-10 rounded-xl shadow-xl">
+            <h2 class="text-4xl font-bold mb-4 text-gray-900">Book an Appointment</h2>
+            <p class="text-gray-700 mb-6">Fill out the form and we will contact you shortly.</p>
+
+            <form id="appointmentForm" class="space-y-5">
+
+                <input type="text" placeholder="Full Name" required
+                       class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-rose-600">
+
+                <input type="email" placeholder="Email Address" required
+                       class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-rose-600">
+
+                <input type="tel" placeholder="Phone Number" required
+                       class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-rose-600">
+
+                <textarea rows="4" placeholder="Message"
+                          class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-rose-600"></textarea>
+
+                <button type="submit"
+                        class="w-full py-4 bg-rose-600 text-white rounded-xl font-semibold btn-hover">
+                    Send Request
+                </button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<!--footer -->
+<footer class="bg-rose-700 text-white py-16 mt-10">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 px-6">
+
+        <div>
+            <h3 class="text-2xl font-bold mb-3">SereneMind</h3>
+            <p class="text-rose-200">Women’s Mental Wellness & Therapy Center</p>
+        </div>
+
+        <div>
+            <h4 class="font-bold mb-3 text-lg">Quick Links</h4>
+            <ul class="space-y-2 text-rose-100">
+                <li><a href="#about" class="hover:text-white footer-link">About</a></li>
+                <li><a href="#services" class="hover:text-white footer-link">Services</a></li>
+                <li><a href="#expertise" class="hover:text-white footer-link">Expertise</a></li>
+                <li><a href="#pricing" class="hover:text-white footer-link">Pricing</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4 class="font-bold mb-3 text-lg">Support</h4>
+            <ul class="space-y-2 text-rose-100">
+                <li><a href="#faq" class=" hover:text-white footer-link">FAQ</a></li>
+                <li><a href="#contact" class="hover:text-white footer-link">Contact</a></li>
+                <li><a href="#" class="hover:text-white footer-link">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4 class="font-bold mb-3 text-lg">Contact</h4>
+            <p>Email: contact@serenemind.com</p>
+            <p>Phone: +1 234 567 890</p>
+        </div>
+
+    </div>
+
+    <p class="text-center mt-10 text-sm text-rose-200">
+        © 2025 SereneMind All Rights Reserved.
+    </p>
+</footer>
+
+<script src="app.js"></script>
+
+</body>
+</html>
