@@ -53,7 +53,7 @@ document.getElementById("appointmentForm").addEventListener("submit", (e) => {
     e.preventDefault();
     Swal.fire({
         title: "Request Sent!",
-        text: "Thank you — we will contact you soon.",
+        text: "Thank you we will contact you soon.",
         icon: "success",
         confirmButtonColor: "#be123c"
     });
